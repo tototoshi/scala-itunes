@@ -1,3 +1,16 @@
+/**
+ *
+ * Copyright 2013 Toshiyuki Takahashi
+ *
+ * This work is licensed under a
+ * Creative Commons Attribution-Share Alike 2.0 UK: England & Wales License
+ * http://creativecommons.org/licenses/by-sa/2.0/uk/
+ * In human-readble terms: you're free to copy, distribute and modify
+ * providing you maintain attribution and licence.
+ *
+ * Use at your own risk, no fitness for purpose implied, etc, etc.
+ * 
+ */
 package com.github.tototoshi.itunes
 
 import scala.sys.process._
