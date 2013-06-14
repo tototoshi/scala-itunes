@@ -37,7 +37,11 @@ object iTunes {
 
   def shuffle() = execute(Seq("shuffle"))
 
+  def shuffle(status: String) = execute(Seq("shuffle", status))
+
   def repeat() = execute(Seq("repeat"))
+
+  def repeat(status: String) = execute(Seq("repeat", status))
 
   def playlist() = execute(Seq("playlist"))
 
