@@ -11,8 +11,12 @@ object iTunes {
 
   private def execute(command: Seq[String]): Result = {
     val b = new ByteArrayOutputStream()
-    val status = (createProcess(command) #> b).!
-    Result(status, b.toString.trim)
+    try {
+      val status = (createProcess(command) #> b).!
+      Result(status, b.toString.trim)
+    } finally {
+      b.close()
+    }
   }
 
   def play() = execute(Seq("play"))
